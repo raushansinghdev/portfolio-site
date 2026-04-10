@@ -21,6 +21,10 @@ concurrency:
   group: "pages"
   cancel-in-progress: true
 
+# Suppress Node 20 deprecation warnings by forcing the runner to Node 24
+env:
+  FORCE_JAVASCRIPT_ACTIONS_TO_NODE24: true
+
 jobs:
   deploy:
     environment:
@@ -34,7 +38,7 @@ jobs:
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 24
           cache: 'npm'
           
       - name: Install Dependencies
