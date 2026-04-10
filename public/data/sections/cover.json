@@ -207,6 +207,44 @@
                     }
                 }
             ]
+        },
+        {
+            "id": 4,
+            "component": "ArticleInfoList",
+            "locales": {
+                "en": {
+                    "title": "Languages I {{Speak}}"
+                }
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "simple_mode": true
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "images/pictures/flag-en.webp",
+                    "faIcon": null,
+                    "locales": {
+                        "en": {
+                            "title": "English - Advanced",
+                            "text": "Fluent and professional communication with a strong command of technical vocabulary."
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "images/pictures/flag-hi.webp",
+                    "faIcon": null,
+                    "locales": {
+                        "en": {
+                            "title": "Hindi - Native",
+                            "text": "Native speaker with deep cultural and linguistic understanding."
+                        }
+                    }
+                }
+            ]
         }
     ]
 }

@@ -14,12 +14,13 @@ import CopyButton from "/src/components/buttons/CopyButton.jsx"
  */
 function ArticleInfoList({ dataWrapper, id }) {
     const [selectedItemCategoryId, setSelectedItemCategoryId] = useState(null)
+    const simpleClass = dataWrapper.settings?.simpleMode ? "article-info-list-simple" : ""
 
     return (
         <Article id={dataWrapper.uniqueId}
                  type={Article.Types.SPACING_DEFAULT}
                  dataWrapper={dataWrapper}
-                 className={`article-info-list`}
+                 className={`article-info-list ${simpleClass}`}
                  selectedItemCategoryId={selectedItemCategoryId}
                  setSelectedItemCategoryId={setSelectedItemCategoryId}>
             <ArticleInfoListItems dataWrapper={dataWrapper}

@@ -75,7 +75,8 @@ export default class ArticleDataWrapper {
             emailJsTemplateId: rawSettings["email_js_template_id"] || undefined,
 
             // Custom Settings
-            isSwipeable: Boolean(rawSettings["is_swipeable"]) || false
+            isSwipeable: Boolean(rawSettings["is_swipeable"]) || false,
+            simpleMode: Boolean(rawSettings["simple_mode"]) || false
         }
     }
 
