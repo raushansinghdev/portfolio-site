@@ -18,7 +18,7 @@
             "items": [
                 {
                     "id": 1,
-                    "img": "images/pictures/og-image.jpg",
+                    "img": "images/pictures/og-image-compressed.webp",
                     "faIcon": null,
                     "locales": {
                         "en": {
