@@ -1,6 +1,10 @@
 @import "/src/styles/extend.scss";
 
 div.article-cards-items {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 20px;
+    
     --item-padding-default: 30px;
     --item-padding-bottom-offset: 8px;
     --item-padding: var(--item-padding-default) calc(var(--item-padding-default) + 8px) calc(var(--item-padding-default) + var(--item-padding-bottom-offset));

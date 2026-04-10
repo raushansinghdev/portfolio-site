@@ -9,6 +9,7 @@ import NavToolThemePicker from "/src/components/nav/tools/NavToolThemePicker.jsx
 import NavToolCursorToggle from "/src/components/nav/tools/NavToolCursorToggle.jsx"
 import NavToolSettings from "/src/components/nav/tools/NavToolSettings.jsx"
 import NavToolResumeDownloader from "/src/components/nav/tools/NavToolResumeDownloader.jsx"
+import NavToolGithubLink from "/src/components/nav/tools/NavToolGithubLink.jsx"
 
 function NavToolList({ expanded }) {
     const language = useLanguage()
@@ -17,13 +18,14 @@ function NavToolList({ expanded }) {
     const data = useData()
 
     const profile = data.getProfile()
-    const maxWidgets = expanded ? 4 : 2
+    const maxWidgets = expanded ? 5 : 3
 
     const shrinkClass = expanded ?
         `` :
         `nav-tools-shrink`
 
     const widgets = [
+        "github",
         ...(language.supportsMultipleLanguages ? ["language"] : []),
         ...(theme.supportsMultipleThemes ? [NavToolSettings.Options.THEME] : []),
         ...(feedbacks.animatedCursorEnabled ? [NavToolSettings.Options.CURSOR] : []),
@@ -43,6 +45,7 @@ function NavToolList({ expanded }) {
             {visibleWidgets.map((item, key) => (
                 <div className={`nav-tools-item`}
                      key={key}>
+                    {item === "github" && (<NavToolGithubLink/>)}
                     {item === "language" && (<NavToolLanguagePicker/>)}
                     {item === NavToolSettings.Options.THEME && (<NavToolThemePicker/>)}
                     {item === NavToolSettings.Options.CURSOR && (<NavToolCursorToggle/>)}

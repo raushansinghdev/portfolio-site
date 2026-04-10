@@ -42,13 +42,12 @@ function ArticleCardsItems({ dataWrapper, selectedItemCategoryId }) {
     const filteredItems = dataWrapper.getOrderedItemsFilteredBy(selectedItemCategoryId)
 
     return (
-        <Swipeable className={`article-cards-items`}
-                   breakpoints={constants.SWIPER_BREAKPOINTS_FOR_THREE_SLIDES}>
+        <div className={`article-cards-items`}>
             {filteredItems.map((itemWrapper, key) => (
                 <ArticleCardsItem itemWrapper={itemWrapper} 
                                       key={key}/>
             ))}
-        </Swipeable>
+        </div>
     )
 }
 

@@ -72,6 +72,10 @@ div.article-timeline-item-avatar {
 
     div.avatar-view-image-view {
         border-radius: 100%;
+        img.image-view-img {
+            object-fit: contain;
+            padding: 12%;
+        }
     }
 
     @include media-breakpoint-down($timeline-merge-mode-breakpoint) {

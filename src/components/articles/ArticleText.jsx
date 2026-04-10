@@ -56,13 +56,15 @@ function ArticleTextItem({ itemWrapper }) {
 
     return (
         <div className={`article-text-item ${positioningClass}`}>
-            <div className={`article-text-avatar-view-wrapper`}>
-                <AvatarView className={`article-text-avatar-view`}
-                            src={itemWrapper.img}
-                            faIcon={itemWrapper.faIconWithFallback}
-                            style={itemWrapper.faIconStyle}
-                            alt={itemWrapper.imageAlt}/>
-            </div>
+            {(itemWrapper.img || itemWrapper.faIcon) && (
+                <div className={`article-text-avatar-view-wrapper`}>
+                    <AvatarView className={`article-text-avatar-view`}
+                                src={itemWrapper.img}
+                                faIcon={itemWrapper.faIconWithFallback}
+                                style={itemWrapper.faIconStyle}
+                                alt={itemWrapper.imageAlt}/>
+                </div>
+            )}
 
             <div className={`article-text-excerpt last-p-no-margin text-3`}
                  dangerouslySetInnerHTML={{__html: itemWrapper.locales.text || itemWrapper.placeholder}}/>

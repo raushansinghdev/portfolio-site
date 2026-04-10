@@ -1,5 +1,5 @@
 /**
- * @author Ryan Balieiro
+ * @author Raushan Singh
  * @date 2025-05-10
  * @description This provider acts as a router for the application, managing the active section and category based on the URL hash.
  */
