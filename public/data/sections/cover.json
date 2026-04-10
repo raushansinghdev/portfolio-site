@@ -17,7 +17,7 @@
             "settings": {
                 "order_items_by": "id",
                 "order_items_sort": "asc",
-                "display_as_list_if_width_is_lower_than": 380
+                "display_as_list_if_width_is_lower_than": 0
             },
             "items": [
                 {
@@ -64,7 +64,7 @@
             "items": [
                 {
                     "id": 1,
-                    "img": "images/pictures/mypic-compressed.webp",
+                    "img": "images/pictures/about-texts-image-1.png",
                     "faIcon": null,
                     "faIconColors": {
                         "bg": "",
