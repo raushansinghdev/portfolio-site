@@ -9,8 +9,8 @@ div.btn-option-picker {
 
 button.btn-option-picker-toggle {
     i.fa-icon {
-        opacity: 0.85;
-        color: var(--theme-primary);
+        opacity: 0.4;
+        color: var(--theme-texts);
     }
 
     img, i.fa-icon {
@@ -34,7 +34,7 @@ button.btn-option-picker-toggle {
 button.btn-option-picker-toggle:hover {
     i.fa-icon {
         opacity: 1;
-        color: var(--theme-primary);
+        color: var(--theme-texts);
     }
 
     img, i.fa-icon {

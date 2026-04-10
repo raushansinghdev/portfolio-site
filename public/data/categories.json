@@ -29,10 +29,10 @@
         },
         {
             "id": "more",
-            "faIcon": "fa-regular fa-object-ungroup",
+            "faIcon": "fa-regular fa-envelope",
             "locales": {
                 "en": {
-                    "title": "More"
+                    "title": "Contact"
                 }
             }
         }
