@@ -76,26 +76,31 @@ function MouseLayer({ active, isBlockedByOverlay, hidden }) {
     }
 
     const _generateMouseTargetParameters = () => {
-        if(!input.lastMouseTarget)
+        const target = input.lastMouseTarget
+        if(!target)
             return
 
+        const closestLink = target.closest("a")
+        const closestButton = target.closest("button")
+        const closestTooltip = target.closest("[data-tooltip]")
+
         let parameters = null
-        if(input.lastMouseTarget.matches("a"))
+        if(closestLink)
             parameters = {type: "link"}
-        if(input.lastMouseTarget.matches("button"))
+        if(closestButton)
             parameters = {type: "button"}
-        if(input.lastMouseTarget.getAttribute('data-tooltip'))
+        if(closestTooltip)
             parameters = {type: "custom"}
 
         const trackableTarget = constants.TRACKABLE_CLASSES.find(item => {
-            return input.lastMouseTarget.classList.contains(item.name)
+            return target.classList.contains(item.name)
         })
 
         parameters = parameters || trackableTarget
         if(!parameters)
             return null
 
-        const dataTooltip = input.lastMouseTarget.getAttribute('data-tooltip')
+        const dataTooltip = closestTooltip?.getAttribute('data-tooltip')
         parameters.dataTooltip = dataTooltip || null
         return parameters
     }

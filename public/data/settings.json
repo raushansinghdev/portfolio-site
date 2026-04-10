@@ -16,7 +16,7 @@
         }
     },
     "templateSettings": {
-        "animatedCursorEnabled": false,
+        "animatedCursorEnabled": true,
         "backgroundStyle": "animated",
         "defaultLanguageId": "en",
         "defaultThemeId": "dark",

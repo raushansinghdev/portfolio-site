@@ -12,7 +12,6 @@ h4.article-title {
     margin-bottom: 24px;
     @include media-breakpoint-down($max-breakpoint-for-tabbed-interface) {
         margin-bottom: 24px;
-        display: none;
     }
 
     span.article-title-prefix {

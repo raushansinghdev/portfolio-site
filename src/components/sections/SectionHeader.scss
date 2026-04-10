@@ -6,6 +6,12 @@ header.section-header {
     align-items: center;
     justify-content: center;
     width: 100%;
+
+    @include media-breakpoint-down(lg) {
+        #section-about & {
+            display: none;
+        }
+    }
 }
 
 div.section-header-prefix {
