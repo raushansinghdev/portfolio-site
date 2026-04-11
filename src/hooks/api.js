@@ -47,6 +47,7 @@ const validators = {
                 email: email,
                 from_email: email,
                 custom_subject: subject,
+                title: subject,
                 message: message,
                 custom_source: utils.url.getAbsoluteLocation(),
                 custom_source_name: "React Portfolio"
