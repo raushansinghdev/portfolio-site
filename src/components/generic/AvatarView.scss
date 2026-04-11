@@ -13,7 +13,10 @@ div.avatar-view {
     &-image-view {
         width: 100%;
         height: 100%;
-        object-fit: cover;
+
+        .image-view-img {
+            object-fit: cover;
+        }
     }
 
     .avatar-icon-view {

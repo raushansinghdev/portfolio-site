@@ -114,15 +114,20 @@ const analytics = {
      * @returns {Promise<void>}
      */
     reportVisit: async() => {
-        await fetch("https://admin.raushansingh.com/api/analytics/mock", {
-            method: 'POST',
-            headers: {'Content-Type': 'application/json'},
-            body: JSON.stringify({
-                params: {
-                    url: utils.url.getRootLocation(),
-                    template_id: "react-portfolio"
-                }
+        try {
+            await fetch("https://admin.raushansingh.com/api/analytics/mock", {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({
+                    params: {
+                        url: utils.url.getRootLocation(),
+                        template_id: "react-portfolio"
+                    }
+                })
             })
-        })
+        } catch (error) {
+            // Silently handle analytics errors to prevent console noise
+            // console.warn("Analytics reporting failed (likely CORS or server offline)");
+        }
     }
 }
