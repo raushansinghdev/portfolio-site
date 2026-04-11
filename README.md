@@ -21,7 +21,7 @@ If you'd like to run this project locally to explore the architecture or run a d
 
 **1. Clone the repository**
 ```bash
-git clone https://github.com/raushan-singh-eng/resume-site.git
+git clone https://github.com/raushansinghdev/resume-site.git
 cd resume-site
 ```
 

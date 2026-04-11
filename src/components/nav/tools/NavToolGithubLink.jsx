@@ -14,7 +14,7 @@ function NavToolGithubLink() {
     }]
 
     const _onClick = () => {
-        window.open("https://github.com/raushan-singh-eng", "_blank")
+        window.open("https://github.com/raushansinghdev", "_blank")
     }
 
     return (

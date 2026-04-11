@@ -36,7 +36,7 @@
                     "faIconColors": {"bg": "#00ADD8", "fill": "#FFFFFF"},
                     "preview": {
                         "links": [
-                            {"href": "https://github.com/raushan-singh-eng", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
+                            {"href": "https://github.com/raushansinghdev", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
                         ],
                         "screenshots": [],
                         "screenshotsAspectRatio": "",
@@ -58,7 +58,7 @@
                     "faIconColors": {"bg": "#25D366", "fill": "#FFFFFF"},
                     "preview": {
                         "links": [
-                            {"href": "https://github.com/raushan-singh-eng", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
+                            {"href": "https://github.com/raushansinghdev", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
                         ],
                         "screenshots": [],
                         "screenshotsAspectRatio": "",
@@ -103,7 +103,7 @@
                     "preview": {
                         "links": [
                             {"href": "https://earth-saviour.netlify.app/", "tooltipString": "open_link", "faIcon": "fa-solid fa-globe"},
-                            {"href": "https://github.com/raushan-singh-eng/earth-saviour", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
+                            {"href": "https://github.com/raushansinghdev/earth-saviour", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
                         ],
                         "screenshots": [],
                         "screenshotsAspectRatio": "",
@@ -126,7 +126,7 @@
                     "preview": {
                         "links": [
                             {"href": "https://routine-generator.netlify.app/", "tooltipString": "open_link", "faIcon": "fa-solid fa-globe"},
-                            {"href": "https://github.com/raushan-singh-eng/routine.iitism", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
+                            {"href": "https://github.com/raushansinghdev/routine.iitism", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
                         ],
                         "screenshots": [],
                         "screenshotsAspectRatio": "",

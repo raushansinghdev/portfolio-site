@@ -31,18 +31,18 @@
                 },
                 {
                     "id": 2,
-                    "label": "raushan.singh.eng@gmail.com",
+                    "label": "raushan@raushansingh.com",
                     "link": {
-                        "href": "mailto:raushan.singh.eng@gmail.com",
+                        "href": "mailto:raushan@raushansingh.com",
                         "tooltipString": "email_me"
                     },
                     "faIcon": "fa-regular fa-envelope"
                 },
                 {
                     "id": 3,
-                    "label": "@raushan-singh-eng",
+                    "label": "@raushansinghdev",
                     "link": {
-                        "href": "https://www.linkedin.com/in/raushan-singh-eng",
+                        "href": "https://www.linkedin.com/in/raushansinghdev",
                         "tooltipString": "see_on_linkedin"
                     },
                     "faIcon": "fa-brands fa-linkedin"
@@ -88,7 +88,8 @@
             },
             "settings": {
                 "order_items_by": "id",
-                "order_items_sort": "asc"
+                "order_items_sort": "asc",
+                "is_swipeable": true
             },
             "items": [
                 {

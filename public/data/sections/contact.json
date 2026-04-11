@@ -56,8 +56,8 @@
                     "id": 2,
                     "faIcon": "fa-solid fa-envelope",
                     "faIconColors": { "bg": "", "fill": "" },
-                    "label": "raushan.singh.eng@gmail.com",
-                    "link": {"href": "mailto:raushan.singh.eng@gmail.com", "tooltipString": "email_me"},
+                    "label": "raushan@raushansingh.com",
+                    "link": {"href": "mailto:raushan@raushansingh.com", "tooltipString": "email_me"},
                     "copyToClipboardButton": true,
                     "locales": {
                         "en": {"title": "E-mail"}
@@ -67,8 +67,8 @@
                     "id": 3,
                     "faIcon": "fa-brands fa-linkedin",
                     "faIconColors": { "bg": "", "fill": "" },
-                    "label": "raushan-singh-eng",
-                    "link": {"href": "https://linkedin.com/in/raushan-singh-eng", "tooltipString": "open_website"},
+                    "label": "raushansinghdev",
+                    "link": {"href": "https://linkedin.com/in/raushansinghdev", "tooltipString": "open_website"},
                     "copyToClipboardButton": false,
                     "locales": {
                         "en": {"title": "LinkedIn"}
@@ -78,11 +78,33 @@
                     "id": 4,
                     "faIcon": "fa-brands fa-github",
                     "faIconColors": { "bg": "", "fill": "" },
-                    "label": "raushan-singh-eng",
-                    "link": {"href": "https://github.com/raushan-singh-eng", "tooltipString": "see_on_github"},
+                    "label": "raushansinghdev",
+                    "link": {"href": "https://github.com/raushansinghdev", "tooltipString": "see_on_github"},
                     "copyToClipboardButton": false,
                     "locales": {
                         "en": {"title": "GitHub"}
+                    }
+                },
+                {
+                    "id": 5,
+                    "faIcon": "fa-brands fa-instagram",
+                    "faIconColors": { "bg": "", "fill": "" },
+                    "label": "_the_Photon",
+                    "link": {"href": "https://www.instagram.com/_the_Photon", "tooltipString": "see_on_instagram"},
+                    "copyToClipboardButton": false,
+                    "locales": {
+                        "en": {"title": "Instagram"}
+                    }
+                },
+                {
+                    "id": 6,
+                    "faIcon": "fa-brands fa-facebook",
+                    "faIconColors": { "bg": "", "fill": "" },
+                    "label": "raushansingheng",
+                    "link": {"href": "https://www.facebook.com/raushansingheng/", "tooltipString": "see_on_facebook"},
+                    "copyToClipboardButton": false,
+                    "locales": {
+                        "en": {"title": "Facebook"}
                     }
                 }
             ]

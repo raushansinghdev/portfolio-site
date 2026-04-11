@@ -98,7 +98,7 @@ const analytics = {
      * @returns {Promise<void>}
      */
     reportVisit: async() => {
-        await fetch("https://admin.raushan-singh-eng.com/api/analytics/mock", {
+        await fetch("https://admin.raushansingh.com/api/analytics/mock", {
             method: 'POST',
             headers: {'Content-Type': 'application/json'},
             body: JSON.stringify({
