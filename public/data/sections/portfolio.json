@@ -58,7 +58,7 @@
                     "faIconColors": {"bg": "#25D366", "fill": "#FFFFFF"},
                     "preview": {
                         "links": [
-                            {"href": "https://github.com/raushansinghdev", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
+                            {"href": "https://github.com/raushansinghdev/real-stories", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
                         ],
                         "screenshots": [],
                         "screenshotsAspectRatio": "",
