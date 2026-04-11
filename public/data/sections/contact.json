@@ -17,7 +17,10 @@
             "settings": {
                 "email_js_public_key": "nKkX0E3fQTtuluOVs",
                 "email_js_service_id": "service_z0hg3fh",
-                "email_js_template_id": "template_oenu5aw"
+                "email_js_template_ids": [
+                    "template_oenu5aw",
+                    "template_td876xf"
+                ]
             },
             "locales": {
                 "en": {

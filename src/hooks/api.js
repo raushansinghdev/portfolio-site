@@ -49,6 +49,7 @@ const validators = {
                 custom_subject: subject,
                 title: subject,
                 message: message,
+                time: new Date().toLocaleString(),
                 custom_source: utils.url.getAbsoluteLocation(),
                 custom_source_name: "React Portfolio"
             }
@@ -73,17 +74,20 @@ const handlers = {
      * @param {Object} validationBundle
      * @param {String} publicKey
      * @param {String} serviceId
-     * @param {String} templateId
+     * @param {String[]} templateIds
      * @return {Promise<{success: boolean}>}
      */
-    sendEmailRequest: async (validationBundle, publicKey, serviceId, templateId) => {
+    sendEmailRequest: async (validationBundle, publicKey, serviceId, templateIds) => {
         emailjs.init(publicKey)
 
         const response = {success: false}
 
         try {
-            const result = await emailjs.send(serviceId, templateId, validationBundle)
-            response.success = result.status === 200
+            const requests = templateIds.map(templateId => 
+                emailjs.send(serviceId, templateId, validationBundle)
+            )
+            const results = await Promise.all(requests)
+            response.success = results.every(result => result.status === 200)
         } catch (error) {
             response.success = false
         }
