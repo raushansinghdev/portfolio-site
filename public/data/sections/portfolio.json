@@ -80,7 +80,7 @@
                     "faIconColors": {"bg": "#E91E63", "fill": "#FFFFFF"},
                     "preview": {
                         "links": [
-                            {"href": "https://github.com/raushan2410/DealNavigator", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
+                            {"href": "https://github.com/raushansinghdev/DealNavigator", "tooltipString": "see_on_github", "faIcon": "fa-brands fa-github"}
                         ],
                         "screenshots": [],
                         "screenshotsAspectRatio": "",

@@ -100,6 +100,102 @@
             "component": "ArticleCards",
             "locales": {
                 "en": {
+                    "title": "{{Coding}} Profiles"
+                }
+            },
+            "settings": {
+                "order_items_by": "id",
+                "order_items_sort": "asc",
+                "is_swipeable": true
+            },
+            "items": [
+                {
+                    "id": 1,
+                    "img": "",
+                    "faIcon": "fa-solid fa-code",
+                    "faIconColors": {
+                        "bg": "#FFA116",
+                        "fill": "#FFFFFF"
+                    },
+                    "date": null,
+                    "link": {
+                        "href": "https://leetcode.com/u/raushan-singh-eng/",
+                        "tooltipString": "open_link"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "{{LeetCode}}",
+                            "text": "Solved [[420+ problems]] with a contest rating of [[1,480+]] (Top 48%). Consistently active with 390+ submissions in the past year."
+                        }
+                    }
+                },
+                {
+                    "id": 2,
+                    "img": "",
+                    "faIcon": "fa-solid fa-laptop-code",
+                    "faIconColors": {
+                        "bg": "#F4511E",
+                        "fill": "#FFFFFF"
+                    },
+                    "date": null,
+                    "link": {
+                        "href": "https://www.naukri.com/code360/profile/raushan2410",
+                        "tooltipString": "open_link"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "{{Code360}} (Coding Ninjas)",
+                            "text": "Solved [[280+ coding problems]] with 1,000+ total submissions. Previously served as a Teaching Assistant at Coding Ninjas."
+                        }
+                    }
+                },
+                {
+                    "id": 3,
+                    "img": "",
+                    "faIcon": "fa-solid fa-terminal",
+                    "faIconColors": {
+                        "bg": "#008BA3",
+                        "fill": "#FFFFFF"
+                    },
+                    "date": null,
+                    "link": {
+                        "href": "https://www.interviewbit.com/profile/thePhoton/",
+                        "tooltipString": "open_link"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "{{InterviewBit}}",
+                            "text": "Solved [[200+ interview-focused]] algorithmic questions across various topics including Dynamic Programming and System Design."
+                        }
+                    }
+                },
+                {
+                    "id": 4,
+                    "img": "",
+                    "faIcon": "fa-brands fa-hackerrank",
+                    "faIconColors": {
+                        "bg": "#2EC866",
+                        "fill": "#FFFFFF"
+                    },
+                    "date": null,
+                    "link": {
+                        "href": "https://www.hackerrank.com/profile/raushansinghdev",
+                        "tooltipString": "open_link"
+                    },
+                    "locales": {
+                        "en": {
+                            "title": "{{HackerRank}}",
+                            "text": "[[5-star badge]] in Problem Solving. Earned gold level badges in C++ and Python. Certified in C (Basic and Intermediate)."
+                        }
+                    }
+                }
+            ]
+        },
+        {
+            "id": 3,
+            "component": "ArticleCards",
+            "locales": {
+                "en": {
                     "title": "{{Certifications}}"
                 }
             },
@@ -250,7 +346,7 @@
             ]
         },
         {
-            "id": 3,
+            "id": 4,
             "component": "ArticleThread",
             "locales": {
                 "en": {
