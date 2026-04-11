@@ -73,6 +73,7 @@ export default class ArticleDataWrapper {
             emailJsPublicKey: rawSettings["email_js_public_key"] || undefined,
             emailJsServiceId: rawSettings["email_js_service_id"] || undefined,
             emailJsTemplateId: rawSettings["email_js_template_id"] || undefined,
+            emailJsTemplateIds: rawSettings["email_js_template_ids"] || undefined,
 
             // Custom Settings
             isSwipeable: Boolean(rawSettings["is_swipeable"]) || false,

@@ -133,7 +133,7 @@ function ArticleContactFormContent({ dataWrapper, selectedItemCategoryId, setSho
                 apiValidation.bundle,
                 dataWrapper.settings.emailJsPublicKey,
                 dataWrapper.settings.emailJsServiceId,
-                dataWrapper.settings.emailJsTemplateIds,
+                dataWrapper.settings.emailJsTemplateIds || dataWrapper.settings.emailJsTemplateId,
             )
         }
         else {

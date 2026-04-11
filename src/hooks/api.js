@@ -81,14 +81,25 @@ const handlers = {
         emailjs.init(publicKey)
 
         const response = {success: false}
+        const ids = Array.isArray(templateIds) ? templateIds : [templateIds]
+
+        if (!ids || ids.length === 0 || !ids[0]) {
+            console.error("EmailJS Error: No template IDs provided.", {templateIds})
+            return response
+        }
 
         try {
-            const requests = templateIds.map(templateId => 
-                emailjs.send(serviceId, templateId, validationBundle)
-            )
-            const results = await Promise.all(requests)
-            response.success = results.every(result => result.status === 200)
+            for (const templateId of ids) {
+                const result = await emailjs.send(serviceId, templateId, validationBundle)
+                if (result.status !== 200) {
+                    console.error(`EmailJS Error for template ${templateId}:`, result)
+                    response.success = false
+                    return response
+                }
+            }
+            response.success = true
         } catch (error) {
+            console.error("EmailJS Exception:", error)
             response.success = false
         }
 
