@@ -1,7 +1,7 @@
 {
     "name": "Raushan Singh",
     "profilePictureUrl": "images/pictures/ghibli-profile.webp",
-    "resumePdfUrl": "data/Raushan_Singh_Resume.pdf",
+    "resumePdfUrl": "https://drive.google.com/file/d/11dKJTNfZQemqjT3WCPYHqKa1ym8ptP8s/view?usp=sharing",
     "statusCircleVisible": true,
     "statusCircleVariant": "available",
     "statusCircleHoverMessage": "status_message_open_to_work",
