@@ -80,9 +80,10 @@
                             "text": "Building large-scale, fault-tolerant backend infrastructure for India's largest telecom. Key contributions include:",
                             "list": [
                                 "Designed and implemented a Go-based DCIM system managing 10,000+ servers, replacing Excel-based workflows and reducing manual inventory updates by 70%",
-                                "Authored HLD and LLD for DCIM and IPAM systems using Domain-Driven Design to improve implementation speed and maintainability",
-                                "Designed fault-tolerant, event-driven distributed workflow orchestration using Temporal, enabling automatic retries and 100% reliability for critical services",
                                 "Designed and integrated a centralized IAM system using OAuth2/OIDC (Keycloak) and OpenFGA, enabling fine-grained RBAC and ABAC across 5+ services with JWT-based auth",
+                                "Designed fault-tolerant, event-driven distributed workflow orchestration using Temporal, enabling automatic retries and 100% reliability for critical services",
+                                "Improved DCIM API latency by 30% by parallelizing external I/O calls using goroutines, eliminating sequential bottlenecks and improving performance under high concurrency.",
+                                "Integrated Piper TTS with a Python-based backend to deliver low-latency speech synthesis via REST APIs; managed model versioning and hot-reload in Docker, reducing response time by 20%.",
                                 "Designed, deployed, and managed cloud-native microservices using Docker and Kubernetes with rolling updates and PVC-backed storage"
                             ],
                             "tags": [

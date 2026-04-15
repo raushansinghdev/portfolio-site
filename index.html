@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <title>Raushan Singh | Software Development Engineer</title>
 
-    <!-- FavIcon -->
+    <!-- Primary: SVG for modern browsers -->
     <link rel="icon" type="image/svg+xml" href="/images/svg/logo.svg" />
 
     <!-- Canonical URL -->
@@ -18,9 +18,9 @@
 
     <!-- Meta: SEO -->
     <meta name="description"
-        content="Portfolio of Raushan Singh, a Software Development Engineer at Jio Platforms specializing in Go, distributed systems, and cloud-native backend infrastructure. Expert in building large-scale, fault-tolerant infrastructure using Kubernetes and event-driven architectures." />
+        content="Raushan Singh is a Software Development Engineer III at Jio Platforms, Mumbai. IIT Dhanbad alumni specializing in Go, distributed systems, Kubernetes, Temporal, Kafka, OAuth2, OpenFGA, and cloud-native backend infrastructure." />
     <meta name="keywords"
-        content="resume, cv, SDE, Jio Platforms, Raushan Singh, raushansinghdev, Software Development Engineer, backend developer, Go developer, distributed systems, microservices, gRPC, event-driven architecture, cloud-native technologies, kubernetes, software engineer, OAuth2, OIDC, OpenFGA, IAM, DCIM, IPAM, scalability, fault-tolerant" />
+        content="Raushan Singh, raushansinghdev, Raushan Singh Jio Platforms, Raushan Singh IIT Dhanbad, Software Development Engineer, SDE III, Go developer, backend developer, distributed systems engineer, Temporal workflow, Kafka, Kubernetes, Docker, AWS, OAuth2, OIDC, OpenFGA, Keycloak, RBAC, ABAC, IAM, DCIM, IPAM, gRPC, microservices, cloud-native, PostgreSQL, Redis, Elasticsearch, MongoDB, system design, concurrency, event-driven architecture" />
     <meta name="robots" content="index, follow" />
     <meta name="googlebot" content="index, follow" />
     <meta name="google" content="notranslate" />
@@ -30,45 +30,182 @@
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
     <meta property="og:url" content="https://raushansingh.com/" />
-    <meta property="og:title" content="Raushan Singh | Software Development Engineer" />
+    <meta property="og:title" content="Raushan Singh | Software Development Engineer III at Jio Platforms" />
     <meta property="og:description"
-        content="Portfolio of Raushan Singh, a Software Development Engineer at Jio Platforms specializing in Go, distributed systems, and cloud-native backend infrastructure." />
+        content="Portfolio of Raushan Singh, SDE III at Jio Platforms. IIT Dhanbad alumni. Expert in Go, distributed systems, Kubernetes, Temporal, Kafka, and cloud-native backend infrastructure." />
     <meta property="og:image" content="https://raushansingh.com/images/pictures/ghibli-profile.webp" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
     <meta property="twitter:url" content="https://raushansingh.com/" />
-    <meta property="twitter:title" content="Raushan Singh | Software Development Engineer" />
+    <meta property="twitter:title" content="Raushan Singh | Software Development Engineer III at Jio Platforms" />
     <meta property="twitter:description"
-        content="Portfolio of Raushan Singh, a Software Development Engineer at Jio Platforms specializing in Go, distributed systems, and cloud-native backend infrastructure." />
+        content="Portfolio of Raushan Singh, SDE III at Jio Platforms. IIT Dhanbad alumni. Expert in Go, distributed systems, Kubernetes, Temporal, Kafka, and cloud-native backend infrastructure." />
     <meta property="twitter:image" content="https://raushansingh.com/images/pictures/ghibli-profile.webp" />
 
     <!-- Structured Data -->
     <script type="application/ld+json">
-        {
-            "@context": "https://schema.org",
-            "@type": "Person",
-            "name": "Raushan Singh",
-            "jobTitle": "Software Development Engineer",
-            "url": "https://raushansingh.com/",
-            "sameAs": [
-                "https://github.com/raushansinghdev",
-                "https://www.linkedin.com/in/raushansinghdev"
-            ]
-        }
-        </script>
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "Raushan Singh",
+        "jobTitle": "Software Development Engineer III",
+        "description": "Backend engineer at Jio Platforms specializing in Go, distributed systems, Temporal, Kafka, Kubernetes, OAuth2, OpenFGA, and cloud-native infrastructure. IIT Dhanbad alumni.",
+        "url": "https://raushansingh.com/",
+        "email": "raushan.singh.eng@gmail.com",
+        "telephone": "+91 7480915841",
+        "alumniOf": {
+            "@type": "CollegeOrUniversity",
+            "name": "Indian Institute of Technology (ISM) Dhanbad"
+        },
+        "worksFor": {
+            "@type": "Organization",
+            "name": "Jio Platforms",
+            "address": {
+                "@type": "PostalAddress",
+                "addressLocality": "Mumbai",
+                "addressCountry": "IN"
+            }
+        },
+        "knowsAbout": [
+            "Go", "C++", "Python", "Distributed Systems", "Kubernetes", "Docker",
+            "Kafka", "Temporal", "PostgreSQL", "Redis", "Elasticsearch", "MongoDB",
+            "OAuth2", "OIDC", "OpenFGA", "Keycloak", "RBAC", "ABAC",
+            "Microservices", "System Design", "Cloud Native", "AWS", "gRPC"
+        ],
+        "sameAs": [
+            "https://github.com/raushansinghdev",
+            "https://www.linkedin.com/in/raushansinghdev"
+        ]
+    }
+    </script>
 
     <!-- Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css?family=Saira:400,700" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css?family=Orbitron:400,700" rel="stylesheet" type="text/css">
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet"
-        type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css">
+
+    <script type="module" src="/src/main.jsx"></script>
 </head>
 
 <body style="background-color: #111111">
-    <div id="root"></div>
+    <div id="root">
+        <!-- 
+            SEO static content: Google reads this on first crawl.
+            React replaces it entirely when JS loads — users never see this.
+        -->
+        <main style="font-family: sans-serif; color: #fff; padding: 2rem; max-width: 900px; margin: 0 auto;">
+
+            <header>
+                <h1>Raushan Singh</h1>
+                <h2>Software Development Engineer III — Jio Platforms, Mumbai</h2>
+                <p>
+                    Contact: raushan.singh.eng@gmail.com | raushansingh.com |
+                    <a href="https://linkedin.com/in/raushansinghdev" style="color:#aaa">LinkedIn</a> |
+                    <a href="https://github.com/raushansinghdev" style="color:#aaa">GitHub</a>
+                </p>
+            </header>
+
+            <section>
+                <h2>About</h2>
+                <p>
+                    Raushan Singh is a Software Development Engineer III at Jio Platforms, Mumbai, with expertise
+                    in Go, distributed systems, cloud-native backend infrastructure, and event-driven architectures.
+                    IIT Dhanbad (Electronics and Communication Engineering, 2019–2023) alumnus and A+ rated top performer
+                    at Jio Platforms. Experienced in building large-scale, fault-tolerant microservices using
+                    Kubernetes, Docker, Kafka, Temporal, PostgreSQL, Redis, and AWS.
+                </p>
+            </section>
+
+            <section>
+                <h2>Experience</h2>
+
+                <h3>Jio Platforms — Software Development Engineer III</h3>
+                <p>Mumbai, India | August 2023 – Present</p>
+                <ul>
+                    <li>Designed and implemented a Go-based Data Center Infrastructure Management (DCIM) system
+                        managing 10,000+ servers, replacing Excel-based workflows and reducing manual inventory
+                        updates by 70%.</li>
+                    <li>Designed and integrated a centralized IAM system using OAuth2/OIDC (Keycloak) and OpenFGA,
+                        enabling fine-grained RBAC and ABAC across 5+ services with JWT-based authentication.</li>
+                    <li>Designed fault-tolerant, event-driven distributed workflow orchestration using Temporal to
+                        handle asynchronous requests, enabling automatic retries and 100% reliability for critical
+                        services.</li>
+                    <li>Improved DCIM API latency by 30% by parallelizing external I/O calls using Go goroutines,
+                        eliminating sequential bottlenecks and improving performance under high concurrency.</li>
+                    <li>Authored High-Level Design (HLD) and Low-Level Design (LLD) for DCIM and IPAM systems;
+                        applied Domain-Driven Design (DDD) to improve implementation speed and maintainability.</li>
+                    <li>Integrated Piper TTS with a Python-based backend for low-latency speech synthesis via REST
+                        APIs; managed model versioning and hot-reload in Docker, reducing response time by 20%.</li>
+                    <li>Developed Python and Go-based automation scripts for DNS management, database backups,
+                        Excel workflows, and cluster provisioning, reducing manual effort by 50–80%.</li>
+                    <li>Designed, deployed, and managed cloud-native microservices using Docker and Kubernetes with
+                        rolling updates, resource tuning, and PVC-backed storage.</li>
+                </ul>
+
+                <h3>Coding Ninjas — Teaching Assistant Intern</h3>
+                <p>Dhanbad, India | April 2022 – August 2022</p>
+                <ul>
+                    <li>Resolved 500+ student queries on Data Structures and Algorithms.</li>
+                    <li>Achieved 4.73/5 instructor rating for technical guidance and problem-solving support.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Technical Skills</h2>
+                <ul>
+                    <li><strong>Languages:</strong> Go, C++, Python</li>
+                    <li><strong>Backend:</strong> REST APIs, Gin, Kafka, Temporal, gRPC, Microservices</li>
+                    <li><strong>Databases:</strong> PostgreSQL, Redis, Elasticsearch, MongoDB</li>
+                    <li><strong>Cloud & DevOps:</strong> Kubernetes, Docker, AWS</li>
+                    <li><strong>Auth & Security:</strong> OAuth2.0, OIDC, Keycloak, OpenFGA, RBAC, ABAC, JWT</li>
+                    <li><strong>Generative AI:</strong> Piper TTS, Agentic Workflows, Prompt Engineering</li>
+                    <li><strong>Concepts:</strong> Distributed Systems, Concurrency, System Design, Event-Driven Architecture, Domain-Driven Design, Cloud-Native</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Projects</h2>
+
+                <h3>WhatsApp Channel Automation</h3>
+                <p>Python, Docker, AWS EC2, Google Sheets API, WAHA API, Cron</p>
+                <ul>
+                    <li>Built a Dockerized WhatsApp automation service that fetches stories from Google Sheets and
+                        publishes them to WhatsApp channels via WAHA HTTP API, enabling fully automated daily
+                        content delivery.</li>
+                    <li>Implemented idempotent processing with Google Sheets service account integration and retry
+                        logic; deployed in production on AWS EC2 using Docker and cron scheduling.</li>
+                </ul>
+
+                <h3>URL Shortener</h3>
+                <p>Go, Gin, GORM, PostgreSQL, Docker</p>
+                <ul>
+                    <li>Built a URL shortening service in Go using Gin with Domain-Driven Design principles.</li>
+                    <li>Designed an optimized PostgreSQL schema with indexed SHA-256 hashes for fast URL lookups
+                        at scale.</li>
+                    <li>Built RESTful APIs for redirect and management operations; packaged as multi-arch Docker
+                        images.</li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Education</h2>
+                <h3>Indian Institute of Technology (ISM) Dhanbad</h3>
+                <p>Bachelor of Technology — Electronics and Communication Engineering | July 2019 – May 2023</p>
+            </section>
+
+            <section>
+                <h2>Achievements</h2>
+                <ul>
+                    <li>A+ Performance Rating — awarded to top 10% performers at Jio Platforms.</li>
+                    <li>All India Rank 8621 in JEE Advanced 2019 (among 160,000+ students).</li>
+                </ul>
+            </section>
+
+        </main>
+    </div>
     <script type="module" src="/src/main.jsx"></script>
 </body>
 
