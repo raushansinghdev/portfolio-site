@@ -5,8 +5,14 @@
     <meta charset="UTF-8" />
     <title>Raushan Singh | Software Development Engineer</title>
 
-    <!-- Primary: SVG for modern browsers -->
-    <link rel="icon" type="image/svg+xml" href="/images/svg/logo.svg" />
+    <!-- Favicons -->
+    <!-- PNG 192x192: used by Google Search for the favicon in results -->
+    <link rel="icon" type="image/png" sizes="192x192" href="/images/pictures/favicon-192.png" />
+
+    <!-- PNG fallback for modern browsers (tab icon) -->
+    <link rel="icon" type="image/png" href="/images/pictures/favicon-192.png" />
+    <!-- Apple touch icon -->
+    <link rel="apple-touch-icon" href="/images/pictures/favicon-192.png" />
 
     <!-- Canonical URL -->
     <link rel="canonical" href="https://raushansingh.com/" />
@@ -29,11 +35,12 @@
 
     <!-- Open Graph / Facebook -->
     <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Raushan Singh" />
     <meta property="og:url" content="https://raushansingh.com/" />
     <meta property="og:title" content="Raushan Singh | Software Development Engineer III at Jio Platforms" />
     <meta property="og:description"
         content="Portfolio of Raushan Singh, SDE III at Jio Platforms. IIT Dhanbad alumni. Expert in Go, distributed systems, Kubernetes, Temporal, Kafka, and cloud-native backend infrastructure." />
-    <meta property="og:image" content="https://raushansingh.com/images/pictures/ghibli-profile.webp" />
+    <meta property="og:image" content="https://raushansingh.com/images/pictures/favicon-192.png" />
 
     <!-- Twitter -->
     <meta property="twitter:card" content="summary_large_image" />
@@ -44,6 +51,18 @@
     <meta property="twitter:image" content="https://raushansingh.com/images/pictures/ghibli-profile.webp" />
 
     <!-- Structured Data -->
+    <!-- WebSite schema: tells Google the site name is "Raushan Singh" (not just the URL) -->
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "WebSite",
+        "name": "Raushan Singh",
+        "url": "https://raushansingh.com/",
+        "description": "Portfolio of Raushan Singh — Software Development Engineer III at Jio Platforms, Mumbai."
+    }
+    </script>
+
+    <!-- Person schema: rich profile data for Google Knowledge Panel -->
     <script type="application/ld+json">
     {
         "@context": "https://schema.org",
@@ -54,6 +73,7 @@
         "url": "https://raushansingh.com/",
         "email": "raushan.singh.eng@gmail.com",
         "telephone": "+91 7480915841",
+        "image": "https://raushansingh.com/images/pictures/ghibli-profile.webp",
         "alumniOf": {
             "@type": "CollegeOrUniversity",
             "name": "Indian Institute of Technology (ISM) Dhanbad"
@@ -92,10 +112,13 @@
 
 <body style="background-color: #111111">
     <div id="root">
-        <!-- 
+        <!--
             SEO static content: Google reads this on first crawl.
-            React replaces it entirely when JS loads — users never see this.
+            React replaces it entirely when JS loads.
+            The <style> below hides it from users to prevent a flash before React mounts,
+            while keeping it fully crawlable by Google (Google reads raw HTML regardless of display:none).
         -->
+        <style>#root > main { display: none; }</style>
         <main style="font-family: sans-serif; color: #fff; padding: 2rem; max-width: 900px; margin: 0 auto;">
 
             <header>
