@@ -15,7 +15,7 @@ function Logo({ className = "", style = {}, size, setDidLoad }) {
              style={style}>
             <img src={utils.file.resolvePath(`/images/pictures/favicon-192.png`)}
                  onLoad={() => { setDidLoad && setDidLoad(true) }}
-                 alt={`logo`}/>
+                 alt={`Raushan Singh Portfolio Logo`}/>
         </div>
     )
 }
